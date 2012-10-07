@@ -1,0 +1,46 @@
+/* LOGIN STATUS TABLE */
+.loginStatus {
+	position: fixed !important;
+	right: 0 !important;
+    vertical-align: middle;			
+	z-index: 100;
+	font-size: 14px;
+	font-weight: bold;
+	height: 20px !important;
+	max-height: 20px !important;
+}
+
+.loginStatus .username {
+    text-align: right;
+	margin-right: 15px !important;
+    position: relative;
+    color: #22A;
+}
+
+.loginStatus .username .label {
+	color: black !important;
+	font-weight: normal !important;
+}
+
+.loginStatus .launcher {
+    text-align: center;
+    width: 80px;
+	color: #222;
+	border: 2px solid #FFF;
+	top: -2px;
+	position: relative;
+}
+
+.loginStatus .launcher:hover {
+	border: 2px solid #DDD;
+	background-color : #FF8;
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;
+}
+
+.loginStatus .launcher:active {
+	border: 2px solid #DDD;
+	background-color : #8F8;
+	border-bottom-color: #BBB;	
+	border-left-color: #BBB;
+}

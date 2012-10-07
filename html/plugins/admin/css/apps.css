@@ -1,0 +1,440 @@
+/* HEADER ROW */
+.admin .apps .headerRow {
+    color: darkblue !important;
+    font-size: 12px !important;
+    padding: 0 !important;
+    text-align: center !important;
+}
+
+.admin .apps {
+	font-family: Verdana;
+}
+
+/* SYNC WORKFLOWS */
+.admin .apps .syncAppsButton {
+	-moz-background-clip: border;
+	-moz-background-inline-policy: continuous;
+	-moz-background-origin: padding;
+	border-radius: 8pt;
+	background: #DDF none repeat scroll 0 0;
+	text-align: center !important;
+	vertical-align: middle !important;
+	padding-top: 4px;
+	width: 100% !important;
+	font-size: 20px !important;
+	height: 30px;
+	color: #888;	
+	border: 1pt solid #CCC;
+	font-weight: 900 !important;
+	-moz-user-select: none !important;	
+}
+
+.admin .apps .syncAppsButton:hover {
+	color: #FFFFFF;
+	background-color: #AAAAFF;
+}
+.admin .apps .syncAppsButton:active {
+	color: #AAFFAA;
+	background-color: #7777DD;
+}
+
+.admin .apps .disabled {
+	background-color: #DDD !important;
+	color: #888 !important;
+}
+
+/* PACKAGE COMBO */
+.admin .apps .packageCombo {
+	/*height: 24px !important;*/
+	width: 120px !important;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center !important;
+	margin-left: auto;
+	margin-right: auto;
+
+    background-color: #FFFFFF !important;
+    left: 4px;
+    padding-top: 0;
+    position: relative;
+}
+
+/* DND AVATAR ICON */
+.admin .apps .dojoDndAvatarHeader,
+.admin .apps .tundra.dojoDndCopy .dojoDndAvatarHeader {
+	background-image: url(../../../plugins/admin/images/app-18.png) !important;
+	background-position: 0.3em 0.2em !important;
+}
+
+.admin .apps .label {
+	text-align:	center !important;
+	font-weight: bolder;
+	font-size: 14px;
+	font-style: oblique;
+	color: darkblue;
+	height: 20px;
+	vertical-align: bottom !important;
+	/*background-color: #FF4;*/
+	background-color: #EEE;
+}
+
+
+/* NB: THIS IS NEEDED FOR THE BUTTON CSS BELOW TO WORK! */
+.admin .apps table textarea {
+	font-family: Verdana;
+}
+.admin .apps .addAppButton {
+	height: 20px !important;
+	width: 115px !important;
+	/*margin-left: auto;*/
+	margin-right: 0px;
+
+	text-align: center;
+	vertical-align: middle;
+	-moz-user-select: none;
+	font-size: 14px;
+	font-family: Verdana;
+	font-weight: bolder;
+	color: #224;
+	background-color: #EEF;
+	
+	border: 4px solid #BBB;
+	border-bottom-color: #888;	
+	border-left-color: #888;
+}
+
+.admin .apps .addAppButton:hover {
+	border-color: #999;
+	border-bottom-color: #555;	
+	border-left-color: #555;
+	background-color : #FF8;
+}
+
+.admin .apps .addAppButton:active {
+	border-color: #999;
+	border-bottom-color: #555;	
+	border-left-color: #555;
+	background-color : #8F8;
+}
+
+.admin .apps .name,
+.admin .apps .type,
+.admin .apps .location,
+.admin .apps .localonly,
+.admin .apps .executor,
+.admin .apps .package,
+.admin .apps .description,
+.admin .apps .notes,
+.admin .apps .url
+{
+	display: inline-block;
+	vertical-align: middle !important;
+	height: auto !important;
+    min-height: 20px !important;
+	font-size: 14px;	
+	text-align: left !important;
+	font-weight: bolder !important;
+	padding-top: 0px;
+}
+
+/* TOGGLE */
+.admin .apps .toggleTitle {
+	text-align: left !important;
+	font-weight: 800 !important;
+	color: #444 !important;
+	font-size: 14px !important;
+	padding-top: 6px !important;
+}
+
+
+/* NON-TOGGLED NODES */
+.admin .admin .apps .dragSource .name,
+.admin .admin .apps .dragSource .type {
+	display: inline-block !important;
+	min-height: 20px !important;
+	height: auto !important;
+	max-height: auto !important;
+	background-color: #FFF;	
+}
+
+/* NEW SUBMIT CHECKBOX AND TITLE */
+.admin .apps .localonlyCheckbox {
+	float: right;
+}
+
+.admin .apps .localonly {
+	padding-left: 15px !important;
+}
+
+/* FORM INPUTS - HEIGHT, WIDTH AND FONT WEIGHT */
+.admin .apps .name,
+.admin .apps .type,
+.admin .apps .executor,
+.admin .apps .package,
+.admin .apps .location,
+.admin .apps .url {
+	height: 25px !important;	
+	width: 100%;
+	font-weight: bolder;
+    color: #222222;
+    font-size: 14px;
+    font-weight: bolder !important;
+    padding-top: 0;
+    text-align: left !important;
+    vertical-align: middle !important;
+}
+
+.admin .apps .description,
+.admin .apps .notes {
+	height: 30px;	
+	width: 100%;
+	font-weight: bolder;
+}
+
+.admin .apps .invalid ,
+.admin .apps .description .dijitTextArea .invalid,
+.admin .apps .notes .dijitTextArea .invalid {
+	border: 2px solid #F00 !important;
+}
+
+/* APPS COMBO */
+.admin .apps .admin .appsCombo,
+.admin .apps .dijitMenu li,
+.admin .apps .dijitMenuItem li {
+	text-indent: 10px;
+}
+
+.admin .apps .appsCombo {
+	font-size: 14px !important;
+	background-color: #FFF !important;
+	text-indent: 0px !important;
+	width: 165px !important;
+	display: table-cell !important;
+	text-align: center !important;
+	width: 100% !important;
+	font-weight: bold !important;
+	font-family: Verdana !important;
+}
+
+.admin .apps .admin .appsCombo {
+	text-indent: 10px;
+	height: auto;
+	width: 150px;
+	color: #000;
+	font-size: 14px !important;
+	font-weight: bold;
+	text-align: center !important;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* HIDE VALIDATION ICON AT RIGHT OF COMBO SCROLLBOX */
+.admin .apps .admin .appsCombo .dijitValidationIcon {
+	/*visibility: hidden !important;*/
+	display: none !important;
+	/*width: 0px !important;*/
+}
+
+/* NOTE: THIS IS NECESSARY FOR THE NEXT RULE TO WORK!!! */
+.admin .apps .admin .appsCombo .dijitReset .dijitMenu li,
+.admin .apps .admin .appsCombo .dijitReset .dijitMenuItem li {
+	/*color: #0FF !important;*/
+}
+.admin .apps .dijitMenu li,
+.admin .apps .dijitMenuItem li {
+	color: #224 !important;
+	height: 25px;
+}
+
+
+/* NOTE: THIS DOESN'T WORK!!! */
+.admin .apps .admin .appsCombo .dijitReset .dijitInputField {
+	/*color: #0FF !important;*/
+	text-align: center !important;
+}
+
+.admin .apps .dragSource,
+.admin .apps .dragSource:hover {
+	-moz-background-clip:			border !important;
+	-moz-background-inline-policy:	continuous !important;
+	-moz-background-origin:			padding !important;
+	-moz-border-radius-bottomleft:	8pt !important;
+	-moz-border-radius-bottomright:	8pt !important;
+	-moz-border-radius-topleft:		8pt !important;
+	-moz-border-radius-topright:	8pt !important;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+
+	/* HEIGHT AND WIDTH ARE SET IN HTML */
+	text-align: left !important;
+	font-size: 12px;
+	border-color: #333;
+	
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+
+/* NAME + IMAGE */
+.admin .apps .dragSource .name {
+	font-size: 14px;
+	color: darkred;
+	font-weight: bolder;
+	text-align: left !important;
+	background-image: url(../../../plugins/admin/images/app-18.png);
+	text-indent: 22px;
+	background-repeat: no-repeat;
+}
+
+/* TOGGLED NODES */
+.admin .apps .dragSource .executor,
+.admin .apps .dragSource .package,
+.admin .apps .dragSource .location,
+.admin .apps .dragSource .localonly,
+.admin .apps .dragSource .location,
+.admin .apps .dragSource .description,
+.admin .apps .dragSource .notes,
+.admin .apps .dragSource .url {
+	display: none;
+	height: auto !important;
+	max-height: auto !important;
+	background-color: #FFF;
+	font-weight: bold !important;
+}
+
+/* WIDTHS */
+.admin .apps .dragSource .name {
+	width: 210px !important;	
+}
+.admin .apps .dragSource .type {
+	width: 110px !important;
+}
+.admin .apps .dragSource .executor {
+	width: 150px !important;
+}
+.admin .apps .dragSource .package {
+	width: 85px !important;	
+}
+.admin .apps .dragSource .localonly {
+	width: 90px !important;		
+}
+.admin .apps .dragSource .location,
+.admin .apps .dragSource .description,
+.admin .apps .dragSource .notes,
+.admin .apps .dragSource .url {
+	width: 348px !important;	
+}
+
+/* MARGIN-LEFT */
+.admin .apps .dragSource .name,
+.admin .apps .dragSource .executor,
+.admin .apps .dragSource .location,
+.admin .apps .dragSource .description,
+.admin .apps .dragSource .notes,
+.admin .apps .dragSource .url {
+	margin-left: 5px !important;
+}
+
+/* MARGIN-TOP */
+.admin .apps .dragSource .name,
+.admin .apps .dragSource .type {
+	margin-top: 1px !important;
+}
+.admin .apps .dragSource .executor,
+.admin .apps .dragSource .location,
+.admin .apps .dragSource .description,
+.admin .apps .dragSource .notes,
+.admin .apps .dragSource .url {
+	margin-top: 1px !important;
+}
+
+/* HEIGHTS */
+.admin .apps .dragSource .name,
+.admin .apps .dragSource .type {
+	min-height: 20px !important;
+	height: 20px !important;
+}
+
+
+/* FONT COLOR, ETC. */
+
+.admin .apps .dragSource .type,
+.admin .apps .dragSource .package {
+	color: blue;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center !important;
+}
+
+.admin .apps .dragSource .package {
+	color: darkblue !important;
+}
+
+
+.admin .apps .dragSource .executor,
+.admin .apps .dragSource .location,
+.admin .apps .dragSource .localonly {
+	color: #222;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: left !important;
+	background: #EFEFEF;
+}	
+
+.admin .apps .dragSource .description {
+	color: #222;
+	font-weight: bold;
+	text-align: left !important;
+	background: #EFEFEF;
+}
+
+.admin .apps .dragSource .notes,
+.admin .apps .dragSource .url {
+	color: #000;
+	font-weight: normal;
+	font-size: 12px;
+	font-style: italic;
+	text-align: left !important;
+	background: #EFEFEF;
+}
+
+.admin .apps .dragSource .url {
+	font-style: normal !important;
+}
+
+
+/*** TRASH ***/
+.admin .apps .trash {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	margin-top: 5px;
+	width: 150px;	
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.admin .apps .trashIcon {
+	height: 100%;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-image: url(../../../plugins/admin/images/trash-60.png);
+	background-repeat: no-repeat;
+}
+

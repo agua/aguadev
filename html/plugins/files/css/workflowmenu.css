@@ -1,0 +1,76 @@
+.workflowmenu {
+    font-family: Verdana;
+	text-indent: 4px;
+	font-size: 16px;
+	color: darkred;
+	font-weight: bold;
+}
+
+
+/* NB: WANT TO LIMIT WIDTH OF MENU ITEM BECAUSE 
+  FILE INPUT ELEMENT OVERSHOOTS ON RIGHT SIDE */
+
+.workflowmenu .dijitMenuItem {
+	max-width: 80px !important;
+	border: 1px solid #888;
+}
+
+.workflowmenu .title {
+	background-color: #000 !important;
+    color: #FFF !important;
+    font-weight: bolder;
+    background-color: #EEE;
+    text-align: left;
+	text-indent: 5px;
+	font-size: 18px !important;
+}
+
+.workflowmenu .refresh,
+.workflowmenu .select,
+.workflowmenu .add,
+.workflowmenu .newProject,
+.workflowmenu .newWorkflow,
+.workflowmenu .deleteWorkflow,	
+.workflowmenu .deleteProject,
+.workflowmenu .copyWorkflow,
+.workflowmenu .copyProject,
+.workflowmenu .renameWorkflow,
+.workflowmenu .openWorkflow {
+	background-repeat: no-repeat;
+}
+
+
+.workflowmenu .select {
+	background-image: url(../../../plugins/files/images/select-20.png);
+}
+.workflowmenu .add {
+	background-image: url(../../../plugins/files/images/add-20.png);
+}
+
+.workflowmenu .newProject {
+	background-image: url(../../../plugins/files/images/newproject-20.png);
+}
+.workflowmenu .newWorkflow {
+	background-image: url(../../../plugins/files/images/newworkflow-20.png);
+}
+.workflowmenu .deleteWorkflow {	
+	background-image: url(../../../plugins/files/images/deleteworkflow-20.png);
+}
+.workflowmenu .deleteProject {
+	background-image: url(../../../plugins/files/images/deleteproject-20.png);
+}
+.workflowmenu .copyWorkflow {
+	background-image: url(../../../plugins/files/images/copyworkflow-20.png);
+}
+.projectmenu .copyProject {
+	background-image: url(../../../plugins/files/images/copyproject-20.png);
+}
+.workflowmenu .renameWorkflow {
+	background-image: url(../../../plugins/files/images/renameworkflow-20.png);
+}
+.workflowmenu .openWorkflow {
+	background-image: url(../../../plugins/files/images/workflow-20.png);
+}
+.workflowmenu .refresh {
+	background-image: url(../../../plugins/files/images/refresh-20.png) !important;
+}

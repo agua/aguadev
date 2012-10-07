@@ -1,0 +1,75 @@
+<!--<!DOCTYPdojo/E HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"-->
+<!--"http://www.w3.org/TR/html4/strict.dtd">-->
+<html>
+<head>
+
+	<!-- prevent cache -->
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="pragma" content="no-cache">
+	
+	<!-- declare character set -->
+	<meta charset="utf-8" />
+
+	<title>Agua</title>
+	<style type="text/css">
+		/* DOJO STYLES */
+		@import "dojo-1.6.1rc2/dojo/resources/dojo.css";
+		@import "dojo-1.6.1rc2/dijit/themes/dijit.css";
+		@import "dojo-1.6.1rc2/dijit/themes/soria/soria.css";
+		@import "dojo-1.6.1rc2/dijit/themes/tundra/tundra.css";
+		@import "dojo-1.6.1rc2/dojox/widget/Loader/Loader.css";
+		@import "dojo-1.6.1rc2/dijit/themes/claro/document.css";
+	</style>
+	<link rel="stylesheet" href="plugins/core/css/toolbar.css">
+	<script type="text/javascript">
+	
+	// GLOBAL VARIABLES
+	var Agua = {};
+	var Data = {};
+	var dojoConfig = {
+		isDebug: true,
+		locale: "en-us",
+		//extraLocale: ['ja-jp'],
+		modulePaths: {"plugins": "../../plugins", "t": "../../t"},
+		debugAtAllCosts: true,
+		useCommentedJson: true
+	};
+	</script>
+	
+	<script type="text/javascript"
+		src="dojo/dojo/dojo.js">
+	</script>
+	
+	<script type="text/javascript"
+		src="build/agua_dojo_dijit.js.uncompressed.js">
+	</script>
+	
+	<script
+		type="text/javascript"
+		src="build/agua_all.js.uncompressed.js">
+	</script>
+
+	<script type="text/javascript">
+		
+	// DEBUG LOADER
+	dojo.require("dojoc.util.loader");
+	
+	dojo.addOnLoad(function(){
+		dojo.require("plugins.core.Agua");
+		dojo.require("plugins.login.Controller");
+		Agua = new plugins.core.Agua( {
+			cgiUrl : "../cgi-bin/agua/"
+			, htmlUrl : "../agua/"
+		});
+		Agua.login = new plugins.login.Login();
+		console.log("agua.html    Completed new plugins.login.Login()");
+	});
+	
+	</script>
+	</head>
+
+<body class="agua tundra">
+	<div id="loginHolder"></div>
+	<div id="attachPoint"></div>
+</body>
+</html>

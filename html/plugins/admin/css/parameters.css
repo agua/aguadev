@@ -1,0 +1,580 @@
+
+/* DOES THIS HELP AUTOSIZING? */
+.admin .parameters {
+	height: auto !important;
+	font-family: Verdana;
+}
+
+/* DND AVATAR ICON */
+.parameters .dojoDndAvatarHeader,
+.parameters .tundra.dojoDndCopy .dojoDndAvatarHeader {
+	background-image: url(../../../plugins/admin/images/parameter-18.png) !important;
+	background-position: 0.3em 0.2em !important;
+}
+
+
+.admin .parameters textarea {
+	overflow: auto !important;
+}
+
+.admin .parameters .headerRow {
+	font-size: 12px !important;
+	color: darkblue !important;
+	text-align: center !important;
+	padding: 0px !important;
+}
+.admin .parameters .unlocked,
+.admin .parameters .locked {
+	background-image: url(../../../plugins/admin/images/locked-24.png);
+	background-repeat: no-repeat;
+	width: 24px;
+	text-align: center !important;
+	vertical-align: middle;
+}
+.admin .parameters .unlocked {
+	background-image: url(../../../plugins/admin/images/unlocked-24.png);
+}
+.admin .parameters .parameterrow .unlocked,
+.admin .parameters .parameterrow .locked {
+	background-image: url(../../../plugins/admin/images/locked-20.png);
+	background-repeat: no-repeat;
+	width: 24px;
+	text-align: center !important;
+	vertical-align: middle;
+	background-position: 0px 4px !important;
+}
+.admin .parameters .parameterrow .unlocked {
+	background-image: url(../../../plugins/admin/images/unlocked-20.png);
+}
+.admin .parameters .label {
+	text-align:	center !important;
+	font-weight: bolder;
+	font-size: 18px;
+	color: darkblue;
+	font-style: oblique;
+	height: 20px;
+	vertical-align: bottom !important;
+	/*background-color: #FF4;*/
+	background-color: #EEE;
+}
+.admin .parameters .label .paramOrder,
+.admin .parameters .label .paramFilter {
+	line-height: 20px !important;
+	height: 40px !important;	
+}
+
+/* NB: THIS IS NEEDED FOR THE BUTTON CSS BELOW TO WORK! */
+.admin .parameters table textarea {
+	font-family: Verdana;
+}
+.admin .parameters .addParameterButton {
+	height: 20px !important;
+	width: 115px !important;
+	/*margin-left: auto;*/
+	margin-right: 0px;
+
+	text-align: center;
+	vertical-align: middle;
+	-moz-user-select: none;
+	font-size: 14px;
+	font-family: Verdana;
+	font-weight: bolder;
+	color: #224;
+	background-color: #FEFEFE;
+	
+	border: 4px solid #BBB;
+	border-bottom-color: #888;	
+	border-left-color: #888;
+}
+
+.admin .parameters .addParameterButton:hover {
+	border-color: #999;
+	border-bottom-color: #555;	
+	border-left-color: #555;
+	background-color : #FFF;
+	/*background-color : #FF8;*/
+}
+
+.admin .parameters .addParameterButton:active {
+	border-color: #999;
+	border-bottom-color: #555;	
+	border-left-color: #555;
+	background-color : #8F8;
+}
+
+.admin .parameters .inputs .name,
+.admin .parameters .inputs .valuetype,
+.admin .parameters .inputs .ordinal,
+.admin .parameters .inputs .value,
+.admin .parameters .inputs .argument,
+.admin .parameters .inputs .category,
+.admin .parameters .inputs .description,
+.admin .parameters .inputs .discretion,
+.admin .parameters .inputs .paramtype,
+.admin .parameters .inputs .format,
+.admin .parameters .inputs .args,
+.admin .parameters .inputs .inputParams,
+.admin .parameters .inputs .paramFunction
+{
+	height: 20px !important;
+	font-size: 14px;
+	color: #222;
+	text-align: left !important;
+	vertical-align: middle !important;
+	font-weight: bolder !important;
+	padding-top: 0px;
+}
+
+.admin .parameters .inputs .paramFunction {
+	height: auto !important;
+}
+
+.admin .parameters .inputs .name {
+	height: 24px !important;
+	width: 170px !important;
+}
+
+.admin .parameters .inputs .valuetype,
+.admin .parameters .inputs .ordinal,
+.admin .parameters .inputs .discretion,
+.admin .parameters .inputs .paramtype {
+	font-size: 13px;
+	height: 24px !important;
+	width: 103px !important;
+	padding-top: 0px;
+	position: relative;
+	left: 4px;
+	background-color: #FFF !important;
+}
+
+.admin .parameters .inputs .format,
+.admin .parameters .inputs .args,
+.admin .parameters .inputs .inputParams,
+.admin .parameters .inputs .paramFunction {
+	/*background-color: #EEE;*/
+	color: #555;
+}
+
+
+.admin .parameters .invalid ,
+.admin .parameters .inputs .description .dijitTextArea .invalid,
+.admin .parameters .inputs .discretion .dijitTextArea .invalid {
+	border: 2px solid #F00 !important;
+}
+
+.admin .parameters .inputs .default {
+	font-style: normal !important;
+	font-weight: normal;
+	font-size: 12px !important;
+	background-color: #DDD;
+}
+.admin .parameters .inputs .default:hover {
+	background-color: #DDD !important;
+}
+
+/* TOGGLE */
+.admin .parameters .toggleTitle {
+	text-align: left !important;
+	padding-top: 6px !important;
+	font-size: 14px !important;
+	font-weight: 800 !important;
+	color: #444 !important;
+}
+
+.admin .parameters .toggleTitle:hover {
+	background-color: #FFA;
+}
+
+.admin .parameters .toggleTitle:active {
+	background-color: #AFA;
+}
+
+/* APPS COMBO */
+.admin .parameters .appsCombo,
+.admin .parameters .appNamesCombo,
+.admin .parameters .paramOrderCombo,
+.admin .parameters .paramFilterCombo,
+.admin .parameters .dijitMenu li,
+.admin .parameters .dijitMenuItem li {
+	text-indent: 10px;
+	background-color: #FFF;
+}
+
+/* COMBO BOX SELECTED FIELD */
+/*.admin .parameters .appsCombo .dijitReset .dijitInputField,*/
+/*.admin .parameters .appNamesCombo .dijitReset .dijitInputField {*/
+/*	background-color: #FFD;*/
+/*}*/
+
+.admin .parameters .appsCombo,
+.admin .parameters .appNamesCombo,
+.admin .parameters .paramOrderCombo,
+.admin .parameters .paramFilterCombo {
+	height: auto;
+	width: 165px !important;
+	color: #000;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center !important;
+	margin-left: auto;
+	margin-right: auto;
+	/*background-color: #FFC;*/
+}
+
+/*.admin .parameters .appNamesCombo {
+	color: darkred;
+	text-align: center !important;
+}
+*/
+/* HIDE VALIDATION ICON AT RIGHT OF COMBO SCROLLBOX */
+.admin .parameters .appsCombo .dijitValidationIcon,
+.admin .parameters .appNamesCombo .dijitValidationIcon,
+.admin .parameters .paramOrderCombo .dijitValidationIcon,
+.admin .parameters .paramFilterCombo .dijitValidationIcon {
+	display: none !important;
+}
+
+.admin .parameters .appsCombo,
+.admin .parameters .appNamesCombo,
+.admin .parameters .paramOrderCombo,
+.admin .parameters .paramFilterCombo {
+	font-size: 14px;
+	background-color: #FFF !important;
+	text-indent: 0px;
+	width: 165px !important;
+	display: table-cell;
+	text-align: center;
+	width: 100%;
+	font-weight: bold;
+	font-family: Verdana;
+}
+
+.admin .parameters .appsCombo .option,
+.admin .parameters .appNamesCombo .option,
+.admin .parameters .paramOrderCombo .option,
+.admin .parameters .paramFilterCombo .option {
+	/*background-color: #FFC !important;*/
+}
+
+/* NOTE: THIS IS NECESSARY FOR THE NEXT RULE TO WORK!!! */
+.admin .parameters .appsCombo .dijitReset .dijitMenu li,
+.admin .parameters .appsCombo .dijitReset .dijitMenuItem li,
+.admin .parameters .appNamesCombo .dijitReset .dijitMenu li,
+.admin .parameters .appNamesCombo .dijitReset .dijitMenuItem li,
+.admin .parameters .paramOrderCombo .dijitReset .dijitMenu li,
+.admin .parameters .paramFilterCombo .dijitReset .dijitMenuItem li
+{
+	/*color: #0FF !important;*/
+}
+
+/*.admin .parameters .appNamesCombo .dijitReset .dijitMenu li,
+.admin .parameters .appNamesCombo .dijitReset .dijitMenuItem li {
+	color: darkred;	
+}
+*/
+/*.admin .parameters .dijitMenu li,
+.admin .parameters .dijitMenuItem li
+{
+	color: #224 !important;
+	height: 25px;
+	background-color: #FFD;
+}
+*/
+/*.admin .parameters .appNamesCombo .dijitMenu li,
+.admin .parameters .appNamesCombo .dijitMenuItem li
+{
+	color: darkred !important;	
+}
+*/
+
+/*.admin .parameters .dijitMenu li:hover,
+.admin .parameters .dijitMenuItem li:hover
+{
+	background-color: #DDD;
+}
+*/
+
+
+
+/* DRAG SOURCE */
+
+
+.admin .parameters .dragSource table {  
+	border-collapse: collapse !important;
+	
+}
+
+.admin .parameters .dragSource tr {
+	/*margin: 0xp !important;*/
+}
+
+.admin .parameters .dragSource table td {
+/*border-bottom: 1px dashed #333 !important;  */
+/*padding: 2px 5px !important;  */
+/*text-overflow:ellipsis !important;  */
+/*overflow:hidden !important;  */
+/*white-space:nowrap !important;  */
+	/*height:100% !important;*/
+	/*width:100% !important;*/
+}
+
+
+.admin .parameters .dragSource {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	/*margin-top: 5px;*/
+	width: 120px;	
+	height: 260px;
+	min-height: 100px;
+	
+	text-align: left !important;
+	font-size: 12px;
+	border-color: #333;
+	
+	/* NEEDED SO THAT SCROLLBAR WILL SHOW */
+	display: block !important;
+	overflow:auto !important;
+}
+
+.admin .parameters .dragSource .editParameterRow {
+	width: 100% !important;
+	height: auto !important;
+	white-space: pre !important;
+}
+
+/* NON-TOGGLED NODES */
+.admin .parameters .dragSource .name,
+.admin .parameters .dragSource .discretion,	
+.admin .parameters .dragSource .paramtype {
+	display: inline-block !important;
+	min-height: 20px !important;
+	height: auto !important;
+	max-height: auto !important;
+	background-color: #FFF;	
+}
+
+/* TOGGLED NODES */
+.admin .parameters .dragSource .argument,
+.admin .parameters .dragSource .valuetype,
+.admin .parameters .dragSource .ordinal,
+.admin .parameters .dragSource .category,
+.admin .parameters .dragSource .value,
+.admin .parameters .dragSource .description,
+.admin .parameters .dragSource .format,
+.admin .parameters .dragSource .args,
+.admin .parameters .dragSource .inputParams,
+.admin .parameters .dragSource .paramFunction {
+	display: none;
+	/*min-height: 25px !important;*/
+	height: auto !important;
+	max-height: auto !important;
+	background-color: #FFF;
+	font-weight: bold !important;
+}
+
+/* WIDTHS */
+	/* LARGE COLUMNS */
+.admin .parameters .dragSource .description,
+.admin .parameters .dragSource .paramFunction {
+	width: 348px !important;
+}
+
+	/* MEDIUM COLUMNS */
+.admin .parameters .dragSource .name,
+.admin .parameters .dragSource .argument {
+	width: 160px !important;
+}
+.admin .parameters .dragSource .format {
+	width: 53px !important;
+}
+	/* LARGE COLUMNS */
+.admin .parameters .dragSource .value {
+	width: 254px !important;
+}
+
+	/* SMALL COLUMNS */
+.admin .parameters .dragSource .valuetype,
+.admin .parameters .dragSource .args {
+	width: 173px !important;
+}
+.admin .parameters .dragSource .inputParams {
+	width: 171px !important;
+}
+.admin .parameters .dragSource .category {
+	width: 90px !important;
+}
+	/* COMBOBOX COLUMNS */
+.admin .parameters .dragSource .ordinal {
+	width: 32px !important;
+}
+.admin .parameters .dragSource .valuetype {
+	width: 90px !important;
+}
+.admin .parameters .dragSource .discretion {	
+	width: 80px !important;
+}
+.admin .parameters .dragSource .lockedValueTypeContainer {
+	display: inline-block;
+	width: 90px !important;
+}
+
+/* MARGIN-LEFT */
+.admin .parameters .dragSource .name,
+.admin .parameters .dragSource .value,
+.admin .parameters .dragSource .argument,
+.admin .parameters .dragSource .description {
+	margin-left: 5px !important;
+}
+
+/* MARGIN-TOP */
+.admin .parameters .dragSource .name,
+.admin .parameters .dragSource .lockedValueTypeContainer,
+.admin .parameters .dragSource .discretion {
+	margin-top: 1px !important;
+}
+
+.admin .parameters .dragSource .argument,
+.admin .parameters .dragSource .value,
+.admin .parameters .dragSource .description,
+.admin .parameters .dragSource .args,
+.admin .parameters .dragSource .paramFunction {
+	margin-top: 1px !important;
+}
+
+/* DISCRETION COMBOBOX */
+.admin .parameters .dragSource .discretionSelect {
+	background-color: #FFF;	
+	color: blue;
+	font-weight: bold;
+	font-size: 12px;
+	background: none;
+}
+
+/* COMBOBOX HEIGHT */
+.admin .parameters .dragSource .valuetype,
+.admin .parameters .dragSource .paramtype,
+.admin .parameters .dragSource .ordinal {
+	height: 20px !important;
+}
+
+
+/* NAME + IMAGE */
+.admin .parameters .dragSource .name {
+	font-size: 14px;
+	color: darkred;
+	font-weight: bolder;
+	text-align: left !important;
+	background-image: url(../../../plugins/admin/images/parameter-18.png);
+	background-repeat: no-repeat;
+	text-indent: 22px;
+}
+
+/* FONT, COLOUR AND TEXT */
+.admin .parameters .dragSource .paramtype .default,
+.admin .parameters .dragSource .discretion .default {
+	color: #555;
+	font-style: italic;	
+}
+
+.admin .parameters .dragSource .valuetype,
+.admin .parameters .dragSource .ordinal,
+.admin .parameters .dragSource .paramtype {
+	font-size: 12px;
+	font-weight: bold !important;
+	text-align: center !important;
+}
+
+.admin .parameters .dragSource .valuetype,
+.admin .parameters .dragSource .ordinal {
+	color: darkblue;
+	font-size: 14px;
+}
+
+.admin .parameters .dragSource .paramtype {
+	color: darkred;
+}
+
+.admin .parameters .dragSource .description {
+	color: #222;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: left !important;
+	background-color: #EED;
+}
+
+.admin .parameters .dragSource .discretion {	
+	color: blue;
+	font-weight: bold;
+	font-size: 12px;
+	background: none;
+}
+
+.admin .parameters .dragSource .format,
+.admin .parameters .dragSource .args,
+.admin .parameters .dragSource .inputParams,
+.admin .parameters .dragSource .paramFunction {
+	color: #222;
+	font-weight: normal;
+	font-size: 10px;
+	background-color: #FFF;
+}
+
+.admin .parameters .dragSource .args,
+.admin .parameters .dragSource .inputParams {
+	max-width: 49% !important;
+}
+
+.admin .parameters .dragSource .format,
+.admin .parameters .dragSource .args,
+.admin .parameters .dragSource .paramFunction {
+	margin-left: 5px !important;
+}
+
+.admin .parameters .dragSource .format {
+	font-size: 14px !important;
+}
+
+
+/* TRASH CAN */
+.admin .parameters .trash {
+	-moz-background-clip:border;
+	-moz-background-inline-policy:continuous;
+	-moz-background-origin:padding;
+	-moz-border-radius-bottomleft:8pt;
+	-moz-border-radius-bottomright:8pt;
+	-moz-border-radius-topleft:8pt;
+	-moz-border-radius-topright:8pt;
+
+	background:#FFFFFF none repeat scroll 0 0;
+	border:3px solid #CCCCCC;
+	cursor:default;
+	padding:1em 0.5em;
+
+	margin-top: 5px;
+	width: 150px;	
+	height: 60px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.admin .parameters .trashIcon {
+	height: 100%;
+	width: 100px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-image: url(../../../plugins/admin/images/trash-60.png);
+	background-repeat: no-repeat;
+}
+
